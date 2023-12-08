@@ -64,6 +64,9 @@ const onpostcreate = (ele) => {
         .catch((err) => {
             cl(err)
         })
+        .finally(()=>{
+            postformcontrol.reset();
+        })
 }
 
 const edithandler = (ele) => {
